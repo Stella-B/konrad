@@ -457,10 +457,11 @@ class PerturbProfile(RelativeHumidityModel):
 
 
 class ProfileFromData(RelativeHumidityModel):
+    """
+    Defines a relative humidity from data.
+    """
     def __init__(self, p_data, rh_data):
         """
-        Defines a relative humidity from data.
-
         Parameters:
             p_data (np.ndarray): pressure coordinates corresponding to rh_data, in Pa
             rh_data (np.ndarray): the rh profile on p_data, in unit of RH
